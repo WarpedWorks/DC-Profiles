@@ -4,15 +4,14 @@ body {
 }
 
  .bg {
-	background-image: url('../img/connect2.jpg');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 1450px;
+	background-image: url('../img/connect3.jpg');
+	background-size: cover;
+	 background-repeat: no-repeat;
 } 
 
 
 .jumbotron {
-	background: rgba(32, 64, 96, 0.6)
+	background: rgba(32, 64, 96, 0.8)
 	/*background: transparent; */
 }
 

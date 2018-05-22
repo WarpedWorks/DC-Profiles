@@ -1,59 +1,85 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>DC Connect</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-</head>
-<body>
+	<head>
+		<title>DC Connect</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<!-- Navbar -->
-	
-	<nav class="navbar sticky-top navbar-light bg-light">
-  		<img src="img/logo.png" alt="DC logo" width="120" href="www.digitalcrafts.com">
-  		<ul class="nav justify-content-end">
-		  <li class="nav-item">
-		    <a class="nav-link active" href="index.html">Home</a>
-		  </li>
-		  <li class="nav-item">
-		    <a class="nav-link" href="./login/index.html">Log in</a>
-		  </li>
-		</ul>
-	</nav>
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	</head>
 
-	<!-- Container -->
+	<body>
 
-	<div class="bg">
-	  	<div class="jumbotron">
-	  		<div class="main-container">
-	  			<img src="img/connect.svg" width="100">
-	  			<h1>DC Connect</h1>
-	  			<p>Easily connect with Digital Crafts students. Are you looking for a person with a particular skill set? Great! Begin your search and find your perfect developer.</p>
-	  			<a href="./login/index.html" class="btn btn-primary">Log in</a>
-	  			<!-- <button type="button" class="btn btn-primary" href="./login/index.html">Log in</button> -->
-	  		</div>
-	  	</div>
-  	</div>
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+			<img src="img/logo.png" alt="DC logo" width="120" href="www.digitalcrafts.com">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+				
+			<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+				<ul class="nav ">
+					<li class="nav-item"><a class="nav-link" href="#">Find Jobs<span class="sr-only">(current)</span></a></li>
+					<li class="nav-item"><a class="nav-link" href="#">Post Jobs</a></li>
+					<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Profiles</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">Student Profiles</a>
+								<a class="dropdown-item" href="#">Employer Profiles</a>
+							</div>
+					</li>
+					<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Career Resources</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Career Advice</a>
+							<a class="dropdown-item" href="#">Salary Insights</a>
+							<a class="dropdown-item" href="#">Career Services</a>
+						</div>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="./login/index.html">Log in</a></li>
+				</ul>
+			</div>
+		</nav>
 
-	<div class="container">
-  		<div class="sub-container">
-  			<img src="img/employer.svg" width="60">
-  			<h3>Employers</h3>
-  			<p>Log in and start your search. Just type in your required skillset and view all DC students who meet that criteria. View their profile and send them a message.</p>
-  		</div>
-  			
-  		<div class="sub-container dummyClass">
-  			<img src="img/student.svg" width="60">
-  			<h3>Students</h3>
-  			<p>This is for you too! Update your bio, resume, social media and project page so that you can be found by awesome companies.</p>
-  		</div>
-  			
-  	</div>
+		<!-- Jumbtron -->
+		<div class="bg">
+			<div class="jumbotron">
+				<div class="main-container"><img src="img/connect.svg" width="100">
+					<h1>DC Connect</h1>
+					<p>Easily connect with Digital Crafts students. Are you looking for a person with a particular skill set? Great! Begin your search and find your perfect developer.</p>
 
-</body>
+					<!-- Log in Button -->
+					<a href="./login/index.html" class="btn btn-primary">Log in</a>
+				</div>
+			</div>
+		</div>
 
-<footer>
-	<div class="footer-copyright py-3 text-center">© Digital Crafts 2018</div>
-</footer>
+		<!-- Employers/Alumni-->
+		<div class="container">
+			<div class="sub-container">
+				<img src="img/employer.svg" width="60">
+				<h3>Employers</h3>
+				<p>Log in and start your search. Just type in your required skillset and view all DC students who meet that criteria. View their profile and send them a message.</p>
+			</div>
+				
+			<div class="sub-container dummyClass">
+				<img src="img/student.svg" width="60">
+				<h3>Students and Alumni</h3>
+				<p>This is for you too! Update your bio, resume, social media and project page so that you can be found by awesome companies.</p>
+			</div>
+		</div>
+
+		<!-- Footer-->
+		<footer>
+			<div class="footer-copyright py-3 text-center">© Digital Crafts 2018</div>
+		</footer>
+
+	</body>
+
+
 </html>
